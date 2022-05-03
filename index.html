@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rajan kumar</title>
+		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<ul class="thumb">
+				<li onmouseover="changeImgSrc('images/shoes1.png')"><img src="images/shoes1.png" alt="shoes1"></li>
+				<li onmouseover="changeImgSrc('images/shoes2.png')"><img src="images/shoes2.png" alt="shoes1"></li>
+				<li onmouseover="changeImgSrc('images/shoes3.png')" ><img src="images/shoes3.png" alt="shoes1"></li>
+			</ul>
+			<div class="imgBox">
+				<h2>Nike Shoes</h2>
+				<div class="image_box">
+					<img class="shoess1" src="images/shoes1.png" alt="shoes1">
+				</div>
+				<ul class="sizes">
+					<h3>Size</h3>
+					<div class="size_numbers">
+						<span>7</span>
+						<span>8</span>
+						<span>9</span>
+						<span>10</span>
+					</div>
+				</ul>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		function changeImgSrc(anything) {
+			document.querySelector('.shoess1').src = anything;
+		}
+	</script>
+	
+</body>
+</html>
